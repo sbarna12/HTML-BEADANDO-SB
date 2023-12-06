@@ -1,7 +1,7 @@
 Az oldal készítője:
 Soós Barnabás Fülöp
 
-URL cím:
+URL cím: https://sbarna12.github.io/webfejlesztes/
 
 Témaleírás: Édesanyám és férje által alapított vállalkozás Pannonhalmán,
 ami többek között gyógynövények és a zene köré épült. Ez az informatív oldal az ő vállalkozásuk számára készült.
