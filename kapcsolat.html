@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="icon" href="kepek/ikon.ico" type="image/x-icon">
+    <title>Kapcsolat</title>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"></script>
+    <script>
+        function initMap() {
+            var helyszin = { lat: 47.4845, lng: 19.0466 }; // Cseréld le a koordinátákat
+            var térkép = new google.maps.Map(document.getElementById('térkép'), {
+                zoom: 15,
+                center: helyszin
+            });
+            var jelolő = new google.maps.Marker({
+                position: helyszin,
+                map: térkép,
+                title: 'Ürmös Porta' // A cím, amikor a felhasználó rákattint a jelölőre
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="kepes"><a href="index.html"><img class="elsoKep" src="kepek/urmoslogo.jpg" alt="Ürmös Porta Logója"></a></li>
+                <li id="indexEgy"><a href="index.html">Ürmös Porta</a></li>
+                <li><a href="gyogynov.html">gyógynövények & gyümölcsészet</a></li>
+                <li><a href="zene.html">zeneterápia</a></li>
+                <li><a href="zarandok.html">zarándokpihenő</a></li>
+                <li><a href="allandoprogramok.html">állandó programok</a></li>
+                <li><a href="#">kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="containerkapcs">
+        <article id="kapart">
+            
+            <h3>Ürmös Alapítvány</h3>
+            <p>Dr. Pottyondy Ákos : +36-30/585-99-30</p>
+            <p>Pottyondy-Csordás Patricia : +36-70/612-40-73</p>
+            <p>Email cím: urmosalapitvany@gmail.com</p>
+            <address>
+                <p>Székhely, postacím: Pannonhalma, Tóthegy 89.</p>
+            </address>
+            <a href="https://www.facebook.com/urmosporta" id="fblink" target="_blank">Friss hírekért kövessétek a facebookunkat!</a><br><br>
+            <a href="https://www.instagram.com/urmos.porta/" id="fblink" target="_blank">További képekért kövessétek az instagramunkat!</a>
+            <p></p>
+    
+            <iframe id="terkep" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5386.654730327387!2d17.775866!3d47.541957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476bcf6f43d49c4b%3A0xc796caf0732c841e!2sPannonhalma%2C%20T%C3%B3thegy%2089%2C%209090!5e0!3m2!1shu!2shu!4v1701447343899!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </article>
+        <aside id="kapaside"><img id="kapkep" src="kepek/kapcs.jpg" alt="elsétál két ember"></aside>
+    </div>
+    <footer>
+        <ul id="footerul">
+            <li>
+                <a href="https://www.facebook.com/urmosporta" id="footerlink" target="_blank">Facebook</a><br><a href="https://www.instagram.com/urmos.porta/" id="footerlink" target="_blank">Instagram</a>
+            </li>
+        
+        <li id ="ev">2023
+		</li>
+		<li id = "keszito">Az oldalt készítete: Soós Barnabás
+		</li>
+	</ul>
+    </footer>
+</body>
+</html>

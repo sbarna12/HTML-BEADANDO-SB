@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <link rel="icon" href="kepek/ikon.ico" type="image/x-icon">
+    <title>Ürmös Porta</title>
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jQuery/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#myform").validate({
+        rules: {
+            nev: "required",
+            lastname: "required",
+            email: {
+                    required: true,
+                    email: true
+            },
+            telefonszam: {
+                    required: true
+            },
+            datum: {
+                required: true
+            },
+            darab: {
+                required: true
+            }
+            
+            },
+        messages: {
+            nev: "Kérlek add meg a nevedet!",
+            email: " Kérlek valós email címet adj meg!",
+            telefonszam: " Kérlek adj meg egy telefonszámot! ",
+            datum: "   Kérlek válassz ki egy dátumot! ",
+            darab: " Kérlek adj meg egy számot! "
+            
+                    
+},
+
+        });
+        });
+        </script>
+    <style>
+        label.error {
+        color: #FB3A3A;}
+        </style>
+
+</head>
+
+<body id="allandoprogramok">
+    <header>
+
+        <nav>
+            <ul>
+                <li id="kepes"><a href="index.html"><img class="elsoKep" src="kepek/urmoslogo.jpg"
+                            alt="Ürmös Porta Logója"></a></li>
+                <li id="indexEgy"><a href="index.html">Ürmös Porta</a></li>
+                <li><a href="gyogynov.html">gyógynövények & gyümölcsészet</a></li>
+                <li><a href="zene.html">zeneterápia</a></li>
+                <li><a href="zarandok.html">zarándokpihenő</a></li>
+                <li><a href="#">állandó programok</a></li>
+				<li><a href="kapcsolat.html">kapcsolat</a></li>
+				
+            </ul>
+        </nav>
+
+    </header>
+    
+    <div class="containerprogi">
+        <div class="programok" onclick="toggleDetails(1)">
+            <div><h2>Zengető</h2></div>
+            <p id="proszoveg1">Zenés játékok - játékos zenélés! Figyelem, önkifejezés és kreativitás fejlesztő játékos-zenés program óvodásoknak és kisiskolásoknak. Hangtálak, hangszerek, népdalok, rajzolás, mozgás klasszikus- és világzenére.</p>
+            <div class="tovabb">
+                <a id="link1" href="#">részletek</a>
+            </div>
+        </div>
+        
+        <div class="programok" onclick="toggleDetails(2)">
+            <div><h2>Betyárképző</h2></div>
+            <p id="proszoveg2">Népi játékok, a népi testkultúra elemeinek gyakorlása bot, ostor és a hagyományos íj játékos és virtuskodó használatával, mozgáskoordinációs feladatok, népdalok, néptánc alapelemek, rovás gyakorlatok.</p>
+            <div class="tovabb">
+                <a id="link2" href="#">részletek</a>
+            </div>
+        </div>
+        
+        <div class="programok" onclick="toggleDetails(3)">
+            <div><h2>Hangfürdő</h2></div>
+            <p id="proszoveg3">Egy belső utazás, ahol a test, a lélek és a szellem a hangok, rezgések segítségével egyaránt egy relaxált, pihentető állapotba tud kerülni. A hangtálak finom, lágy hangjai segítenek a felkészülésben: először a testünket, lelkünket lazítjuk el, megkeresve a békét, biztonságot, védelmet adó helyünket, és ebből nyugalomból indulunk el azon a saját úton, ahol aztán a gong intenzívebb, erőteljesebb hullámai, majd a monochord monoton, meditatív hangjai, segítik a test pihenését, gyógyulását.</p>
+            <div class="tovabb">
+                <a id="link3" href="#">részletek</a>
+            </div>
+        </div>
+        
+        <div class="programok" onclick="toggleDetails(4)">
+            <div><h2>Gyógynövények és gyümölcsök az évkörben, Csereberepiac</h2></div>
+            <p id="proszoveg4">Bemutatásra kerülnek az évkör adott időszakának gyógynövényei és tájfajta gyümölcsei, valamint az is, hogy mi dolog ilyenkor a kertben! A kertekben vezetett elméleti előadásokat gyakorlati foglalkozás követ, mely során a résztvevők valamilyen gyógynövényes vagy gyümölcsös készítményt (Tinktúra, macerátum, fűszersó, stb.) állíthatnak össze. Az alkalmak zárásaként a résztvevők által hozott portékákból csereberepiacot tartunk!</p>
+            <div class="tovabb">
+                <a id="link4" href="#">részletek</a>
+            </div>
+        </div>
+        
+            
+
+    </div>
+    <div class="foglalas">
+    
+        <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php" id="myform" novalidate>
+
+            <h2>Jelentkezés a programokra</h2>
+            <table>
+        
+                <tr>
+                    <td><label for="nev">Név:</label></td>
+                    <td><input type="text" id="nev" name="nev"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td>
+                    <td><input type="text" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="telefonszam">Telefonszám:</label></td>
+                    <td><input type="tel" id="telefonszam" name="telefonszam"></td>
+                </tr>
+                <tr>
+                    <td><label for="datum">Kívánt dátum:</label></td>
+                    <td><input type="date" id="datum" name="datum"></td>
+                </tr>
+                <tr>
+                    <td><label for="darab">Hányan jöttök?</label></td>
+                    <td><textarea id="darab" name="darab" rows="1"></textarea></td>
+
+                </tr>
+                <tr>
+                    <td><label for="megjegyzes">Megjegyzés:</label></td>
+                    <td><textarea id="megjegyzes" name="megjegyzes" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Programok:</label></td>
+                    <td>
+                        <input type="checkbox" id="zengeto" name="program" value="Zengető">
+                        <label for="zengeto">Zengető</label><br>
+    
+                        <input type="checkbox" id="betyarkepzo" name="program" value="Betyárképző">
+                        <label for="betyarkepzo">Betyárképző</label><br>
+    
+                        <input type="checkbox" id="hangfurdo" name="program" value="Hangfürdő">
+                        <label for="hangfurdo">Hangfürdő</label><br>
+    
+                        <input type="checkbox" id="csereberepiac" name="program" value="Csereberepiac">
+                        <label for="csereberepiac">Csereberepiac</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="feltetel">Feltételek elfogadása:</label></td>
+                    <td><input type="radio" id="feltetel" name="feltetel" >igen
+                    <input type="radio" id="feltelel" name="feltetel"  >nem</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Jelentkezés</button></td>
+                </tr>
+            </table>
+        </form>
+    
+    </div>
+	<footer>
+        <ul id="footerul">
+            <li>
+                <a href="https://www.facebook.com/urmosporta" id="footerlink" target="_blank">Facebook</a><br><a href="https://www.instagram.com/urmos.porta/" id="footerlink" target="_blank">Instagram</a>
+            </li>
+        
+        <li id ="ev">2023
+		</li>
+		<li id = "keszito">Az oldalt készítete: Soós Barnabás
+		</li>
+	</ul>
+    </footer>
+	
+
+       

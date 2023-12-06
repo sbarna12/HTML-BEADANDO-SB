@@ -1,0 +1,19 @@
+Az oldal készítője:
+Soós Barnabás Fülöp
+
+URL cím:
+
+Témaleírás: Édesanyám és férje által alapított vállalkozás Pannonhalmán,
+ami többek között gyógynövények és a zene köré épült. Ez az informatív oldal az ő vállalkozásuk számára készült.
+
+JavaScript kódok:
+Az 5. oldalon (állandó programok) található interaktív felületet JavaScrip segítségével készítettem el.
+Négy darab szövegdoboz található az oldalon és bármelyikre kattintás esetén, megjelenik az adott szövegdobozhoz tartozó információ,természetesen úgy hogy a kattintott link eltűnjön.
+
+Font típusok:
+Az összes weboldalon a Sanchez betűtípust használtam (https://fonts.google.com/specimen/Sanchez) a Google Fonts weboldalról.
+
+Átvett kód:
+
+Linkek alatti csík formázása. (AI)
+

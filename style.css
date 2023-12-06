@@ -1,0 +1,493 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Sanchez', serif;
+}
+.elsoKep {
+    width: 130px; 
+    border-radius: 40px;
+
+}
+.containerprogi {
+    
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px;
+    border-radius: 5px;
+    flex: 1;
+    align-items: flex-start;
+
+}
+
+.programok {
+    display: flex;
+    flex: 1;    
+    border: 1px solid #ccc; 
+    margin: 15px; 
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 30px;
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
+    height:fit-content;
+    font-size: 1em;
+}
+.tovabb {
+    margin-top: 10px;
+    width: 100%;
+}   
+#proszoveg {
+        margin-top: 0;
+
+}
+
+
+#link1,
+#link2,
+#link3,
+#link4 {
+    position: relative;
+    color: #000; /* Alapértelmezett szín */
+    text-decoration: none;
+    margin-top: 10px; /* Választható, a linktől való távolság */
+}
+
+#link1::before,
+#link2::before,
+#link3::before,
+#link4::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000; 
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease; /* Az animáció sebessége és könnyedsége */
+}
+
+#link1:hover::before,
+#link2:hover::before,
+#link3:hover::before,
+#link4:hover::before {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+}
+#kepes{
+    padding: 0px;
+    padding-bottom: 2.5px;
+    border-right: 0px solid #999;
+    border-radius: 10px;
+    margin: 0px;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#indexEgy {
+    display: flex;
+    justify-content: left;
+    margin-left: 0px;
+    margin-right: 0px;  
+    font-size: 2.5em;
+    font-weight: bold;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galleria {
+    margin: auto;
+    width: 90vw;
+    height: 90vw;
+
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    width: 90vw;
+    margin: auto;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+	background-image: url(kepek/header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;   
+}
+
+body#allandoprogramok{
+    padding: 0;
+    margin: 0;
+	background-image: url(kepek/luxa.org-opacity-changed-header.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;   
+}
+
+
+.container {
+    
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+	background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    flex: 1;
+
+
+}
+
+ table {
+    width: 100%;
+    margin: auto;   
+    border-collapse: collapse;
+}
+
+h2 {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+table,
+td {
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+
+
+
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #1a531d;
+}
+
+.foglalas {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        background-color: #ffffff;
+        opacity: 90%;
+        border-radius: 5px;
+        flex: 1;
+        justify-content: space-around;
+        justify-self: center;
+        align-self: center;
+        width: fit-content;
+        font-size: 1em;
+    }
+
+    
+
+
+.container > * {
+    height: fit-content;
+    margin: 1%;
+}
+
+
+header {
+    padding: 5px;
+    display: flex;
+	margin: 0px;
+    text-align: center;
+    font-size: 1.7em;
+    color: #ffffff;
+    background-color: #0a0909;
+    width:100%;
+    align-items: center;
+}
+
+nav {
+    padding: 0;
+    flex: 1 1 100%;
+}
+
+nav ul {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    }
+
+nav li {
+    padding: 10px;
+    color: #ffffff;
+    align-items: center;
+}  
+    
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 80px;
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff; 
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+nav a:hover::before {
+    transform: scaleX(1); 
+    transform-origin: bottom left;
+}
+
+article {
+    flex: 1 1 100%;
+    text-align: justify;
+    padding: 12px;
+    margin-top: 2px;    
+    border-radius: 10px;
+	font-size: 20px;
+    margin: 0px;
+}
+#zene {
+    font-style: italic;
+}
+.containerkapcs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+	background-color: #ffffff;
+    opacity: 90%;
+    border-radius: 5px;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#kapart {
+    flex: 1;
+    box-sizing: border-box;
+    
+}
+
+#kapaside {
+    
+    flex: 1;
+    max-width: 60%; /* A kép maximális szélessége */
+    display: none;
+
+    
+
+}
+#kapkep {
+    width: 100%;
+    height: auto;
+    
+    border-radius: 10px; /* Kép lekerekítése */
+}
+#terkep {
+    width: 100%; /* A térkép szélességét a kijelző szélességéhez igazítja */
+}
+
+aside {
+    height: fit-content;
+    text-align: justify;
+    padding: 2px;
+    margin-top: 2px;
+    border-radius: 10px;
+    flex: 1 1 100%;
+    font-size: 20px;
+}
+footer {
+    color: #ffffff;
+    background-color: #0a0909;
+    margin: 0px;
+    padding: 30px;
+    font-size: medium;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column; 
+}
+#ev {
+    display: none;
+}
+
+#footerul{
+    list-style-type: none;
+}
+
+
+#dolt {
+    font-style: italic;
+}
+
+form {
+    margin: 10px;
+}
+#fblink {
+    color: #000;
+}
+#footerlink {
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+
+
+@media only screen and (min-width: 650px) {
+    /* tablet */
+    
+    nav ul {
+        flex-direction: row ;
+    }
+    nav li {
+        border-right: 1px solid #999; 
+    }
+    nav ul li {
+        flex-basis: 14%;
+    }
+    aside {
+        flex-basis: 50%;
+        margin: 0;
+    }
+    article {
+        flex-basis: 40%;
+
+        margin: 0;
+    }
+    header {
+        font-size: 1.5vw;
+    }
+    #footerul {
+        flex-direction: row; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ev {display: block;}
+    #keszito {
+        float: right;
+        list-style-type: none;
+    }
+    .elsoKep{
+        width: 9vw;
+        height: auto;}
+}
+
+@media only screen and (min-width: 900px) {
+    /* számítógép */
+    
+
+    nav ul {
+        flex-direction: row;
+    }
+    nav li {
+        border-right: 1px solid #999; 
+    }
+    header {
+        font-size: 1.3vw;
+    }
+    #indexEgy {
+        font-size: 2.5vw;
+
+    }
+    
+    .containerprogi {
+
+    flex-direction: row;}
+    .foglalas{
+        width: 40%;
+    }
+    .containerkapcs {
+        flex-direction: row;
+    }
+    #kapaside {
+        display: block;
+        margin-right: 150px;
+    }
+    #kapart{
+        margin-left: 50px;
+        margin: 90px;
+    }
+    #footerul {
+        flex-direction: row; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #ev {display: block;}
+    #keszito {
+        float: right;
+        list-style-type: none;
+    }
+    .elsoKep{
+        width: 7vw;
+        height: auto;
+    }
+}
+
